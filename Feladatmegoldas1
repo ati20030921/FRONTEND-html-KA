@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feladat1.css">
+    <script src="feladat1.js"></script>
+    <title>1.Feladat</title>
+</head>
+<body>
+    <script>
+        let tomb = new Array(3);
+    </script>
+    <fieldset>
+        <label for="vnev">Vezetéknév:</label>
+        <input type="text" id="vnev1" name="veznev" size="10" placeholder="vezetéknév">
+    
+        <label for="knev">Keresztnév:</label>
+        <input type="text" id="knev1" name="knev" size="10" placeholder="keresztnév">
+    
+        <label for="szhely">Születési hely:</label>
+        <input type="text" id="szhely" name="szhely" size="10" placeholder="Születésihely">
+
+        <input type="submit" value="Küldés" onclick="Kiir()">
+    </fieldset>
+</body>
+</html>
+
+function Kiir(){
+    var knev1 = document.getElementById('vnev1').value;
+    var vnev1 = document.getElementById('knev1').value;
+    var szhely1 = document.getElementById('szhely').value;
+
+    let allofthem = [knev1,vnev1,szhely1]
+    console.log(allofthem);
+}
+
+#vnev1{
+    background-color:lightblue;
+    color: black;
+}
+#knev1{
+    background-color: lightblue;
+    color: black;
+}
+#szhely{
+    background-color: lightblue;
+    color: black;
+}
