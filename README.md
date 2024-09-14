@@ -66,4 +66,3 @@ function nincsjogsi(){
     let ketto = [masodik];
     console.log(ketto);
 }
-
