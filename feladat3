@@ -22,19 +22,17 @@
     height: 300px;         
 }
 
-.container div {
-    flex-grow: 1;          
-}
-
-
 .green {
     background-color: green;
+    width: 200px;
 }
 
 .yellow {
     background-color: yellow;
+    width: 300px;
 }
 
 .purple {
     background-color: purple;
+    width: 200px;
 }
