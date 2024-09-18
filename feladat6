@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="feladat6.css">
+  <link rel="stylesheet" href="feladat6.js">
+  <link rel="stylesheet" href="style.css">
+  <title>6.Feladat</title>
+</head>
+<body>
+  <header>
+    <h1>CodeWars Pontszámok</h1>
+  </header>
+  
+  <main>
+    <section class="felhasznalo">
+        <label for="nev">Felhasználónév:</label>
+        <input type="text" id="nev" placeholder="Felhasználónév">
+        <button id="button">Feldolgoz</button>
+      </section>
+  </main>
+
+  <footer>
+    <nav>
+        <ul>
+          <li><a id="pontok">Összes</a></li> <br>
+          <li><a id="nyelvek">Pontok</a></li>
+        </ul>
+      </nav>
+  </footer>
+
+</body>
+</html>
+
+document.getElementById("button").addEventListener("click", fetchUserData);
+document.getElementById("pontok").addEventListener("click", () => displayOverallData());
+document.getElementById("nyelvek").addEventListener("click", () => displayLanguagesData());
+
+
+function fetchUserData() {
+  const username = document.getElementById("nev").value;
+
+  fetch(`https://www.codewars.com/api/v1/users/${username}`)
+    .then(response => response.json())
+    .then(data => {
+      userData = data;
+      displayOverallData();
+    })
+}
+
+main{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cf4f4f;
+}
+  
+header{
+    background-color: rgb(212, 103, 103);
+    color: black;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+input{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+  
+button{
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+nav{
+    background-color: #ca4848;
+    padding: 1rem;
+}
+  
+nav>ul{
+    list-style-type: none;
+    padding: 0;
+}
+  
+nav>ul>li{
+    display: inline;
+    margin-right: 1rem;
+}
+  
+nav>u>li>a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
