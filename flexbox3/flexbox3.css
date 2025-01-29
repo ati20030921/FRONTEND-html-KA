@@ -1,0 +1,33 @@
+body{
+  background-color: #fff;
+  display: flex;
+}
+
+.felso {
+background-color: darkmagenta;
+height: 200px;
+width: 30vh;
+}
+
+.box {
+background-color: blue;
+flex-direction: row;
+text-align: center;
+flex-wrap: wrap;
+height: 200px;
+width: 150px;
+}
+
+.jobb {
+  background-color: green;
+  display: flex;
+  height: 500px;
+  width: 70vh;
+}
+
+.bal {
+  background-color: yellow;
+  display: flex;
+  
+}
+
