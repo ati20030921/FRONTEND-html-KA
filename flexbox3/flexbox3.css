@@ -1,33 +1,32 @@
-body{
-  background-color: #fff;
-  display: flex;
-}
 
-.felso {
-background-color: darkmagenta;
-height: 200px;
-width: 30vh;
-}
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            background-color: purple;
+            height: 10%;
+            padding: 5px;
+        }
+        .header div {
+            background-color: cyan;
+            width: 50px;
+            height: 100%;
+            margin: 2px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .left {
+            background-color: yellow;
+            flex: 2;
+        }
 
-.box {
-background-color: blue;
-flex-direction: row;
-text-align: center;
-flex-wrap: wrap;
-height: 200px;
-width: 150px;
-}
-
-.jobb {
-  background-color: green;
-  display: flex;
-  height: 500px;
-  width: 70vh;
-}
-
-.bal {
-  background-color: yellow;
-  display: flex;
-  
-}
-
+        .right {
+            background-color: green;
+            flex: 1;
+        }
