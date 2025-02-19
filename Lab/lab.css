@@ -1,0 +1,41 @@
+.card{
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.card-header{
+  width: 345px;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.fel{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.felirat1{
+  text-align: center;
+  margin-top: -5px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.gomb{
+  background-color: black;
+  width: 320px;
+  height: 120px;
+  color: #fff;
+  border-radius:5px;
+  margin-bottom: 20px;
+}
+
+.fw-light{
+  font-weight: 300px;
+}
